@@ -13,6 +13,13 @@
    $ pip install -r reqiurements.txt
    ```
 
+    OR
+
+    ```
+    //Simply use the env created
+     $ source env/bin/activate
+    ```
+
 2. ```
     In the models.py file, change the host, user credentials, database name.
    ```
