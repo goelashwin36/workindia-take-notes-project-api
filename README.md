@@ -16,7 +16,7 @@
     OR
 
     ```
-    //Simply use the env created
+    //Simply use the env created(Recommended)
      $ source env/bin/activate
     ```
 
@@ -91,3 +91,11 @@ Response Data: {
 
 
 ```
+
+## Possible errors
+
+The `simple-crypt` module depends on `Crypto`.
+
+`Crypto` module used a function `time.clock()` which is deprecated and is no longer used.
+
+Replacing the function with `time.process_time()` solves the error. Please make changes in the relavant files if error occurs.
